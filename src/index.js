@@ -98,15 +98,6 @@ const s = p => {
 
     p.image(trump, 0, 0 + trumpYShift);
   };
-
-  function handleFile(file) {
-    if (file.type === "image") {
-      chart = p.createImg(file.data, "");
-      chart.hide();
-    } else {
-      chart = null;
-    }
-  }
 };
 
 new p5(s, SKETCH_ID);

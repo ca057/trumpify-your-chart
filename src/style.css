@@ -5,19 +5,70 @@
 }
 
 body,
-html {
+html,
+main {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font: 16px/1.5 BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
+    Oxygen-Sans, Ubuntu, Cantarell, Fira Sans, Droid Sans, "Helvetica Neue",
+    sans-serif;
 }
 
-.text-st {
-  text-decoration: line-through;
+body {
+  border: 5px solid #b22234;
+  padding: 5px;
+}
+
+main {
+  padding: 32px 16px;
+  border: 5px solid #3c3b6e;
+}
+
+h1 {
+  font-family: serif;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 16px;
+}
+p.footer {
+  align-self: flex-end;
+  text-align: right;
+  font-size: 9px;
+  margin-bottom: 0;
+  color: grey;
+}
+
+input,
+button#download {
+  font-size: 16px;
+}
+
+ol {
+  padding: 0 32px;
+}
+
+a,
+a:link,
+a:visited {
+  color: #3c3b6e;
+}
+
+a:focus,
+a:hover,
+a:active {
+  color: #b22234;
 }
 
 #sketch {
-  flex: 1;
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;

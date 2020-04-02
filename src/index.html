@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Trumpify your charts!</h1>
-    <p>
-      You need <span class="text-st">someone dumb</span> Trump looking at your
-      charts so they look more trustworty to your colleagues? Here you go!
-    </p>
-    <p>
-      Upload your chart:
-      <input type="file" name="" id="upload" accept="image/*" />
-    </p>
-    <button id="download">Download</button>
-    <div id="sketch"></div>
-    <!-- Photo by Drew Beamer on Unsplash -->
+    <main>
+      <h1>Trumpify your charts!</h1>
+      <p>
+        You need Trump looking at your charts so they look more trustworty to
+        your colleagues? Here you go!
+      </p>
+      <ol>
+        <li>
+          Upload your chart:
+          <input type="file" name="" id="upload" accept="image/*" />
+        </li>
+        <li>
+          <button id="download">Download the picture!</button>
+        </li>
+      </ol>
+      <div id="sketch"></div>
+      <p class="footer">
+        Background image by
+        <a href="https://unsplash.com/photos/9uX5cX1l3bw">Drew Beamer</a> on
+        Unsplash
+      </p>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="index.js"></script>
   </body>
