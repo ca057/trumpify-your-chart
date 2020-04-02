@@ -30,8 +30,10 @@ const s = p => {
 
   const uploadButton = document.getElementById("upload");
   uploadButton.addEventListener("change", function() {
-    if (file.type === "image") {
-      chart = p.loadImage(URL.createObjectURL(uploadButton.files[0]));
+    const file = uploadButton.files[0];
+
+    if (file.type.startsWith("image")) {
+      chart = p.loadImage(URL.createObjectURL(file));
       uploadButton.value = "";
     } else {
       chart = null;
